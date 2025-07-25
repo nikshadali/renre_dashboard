@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import AppSidebar from "@/components/AppSidebar";
-import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import { cookies } from "next/headers";
 
 const geistSans = Geist({
@@ -29,7 +26,7 @@ export default async function RootLayout({
 }>) {
 
   const cookieStore = await cookies()
-  const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
+ // const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
   
   return (
     <html lang="en" suppressHydrationWarning>
