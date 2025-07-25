@@ -1,13 +1,6 @@
 import {
-  Home,
-  Inbox,
-  Calendar,
-  Search,
-  Settings,
   User2,
   ChevronUp,
-  Plus,
-  Projector,
   ChevronDown,
   QrCode,
   CircleUser,
